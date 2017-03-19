@@ -27,20 +27,20 @@
                 <!--Navbar Brand-->
                 <a class="navbar-brand" href="https://mdbootstrap.com/material-design-for-bootstrap/" target="_blank">MDB</a>
                 <!--Links-->
-                <ul class="nav navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Resources</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
+                <?php
+                if ( has_nav_menu( 'navbar' ) ) {
+                  wp_nav_menu( array(
+                  'menu'              => 'navbar',
+                  'theme_location'    => 'navbar',
+                  'depth'             => 2,
+                  'menu_class'        => 'nav navbar-nav',
+                  'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                  'walker'            => new MDBBootstrapNavMenuWalker())
+                  );
+                } else
+                echo "Please assign Navbar Menu in Wordpress Admin -> Appearance -> Menus -> Manage Locations";
+                ?>                                                                                                                                             
+                
             </div>
             <!--/.Collapse content-->
         </div>

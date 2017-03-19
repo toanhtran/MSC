@@ -17,5 +17,25 @@ function theme_enqueue_scripts() {
         }
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_scripts' );
 
+/**
+ * Include external files
+ */
+require_once('inc/mdb_bootstrap_navwalker.php');
+             
+/**
+ * Setup Theme
+ */
+function MDB_setup() {
+  // Navigation Menus
+  register_nav_menus(array(
+    'navbar' => __( 'Navbar Menu')
+    ));
+  // Add featured image support
+    add_theme_support('post-thumbnails');
+    add_image_size('main-full', 1078, 516, false); // main post image in full width
+  }
+  add_action('after_setup_theme', 'MDB_setup');
+
+
 ?>
             
