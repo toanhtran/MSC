@@ -1,4 +1,3 @@
-
 <?php
 
 /**
@@ -17,6 +16,7 @@ function theme_enqueue_scripts() {
         }
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_scripts' );
 
+        
 /**
  * Include external files
  */
@@ -28,14 +28,17 @@ require_once('inc/mdb_bootstrap_navwalker.php');
 function MDB_setup() {
   // Navigation Menus
   register_nav_menus(array(
-    'navbar' => __( 'Navbar Menu')
+    'navbar' => __( 'Navbar Menu'),
+    'footer1' => __( 'Footer #1 Column'),
+    'footer2' => __( 'Footer #2 Column'),
+    'footer3' => __( 'Footer #3 Column')
     ));
   // Add featured image support
     add_theme_support('post-thumbnails');
     add_image_size('main-full', 1078, 516, false); // main post image in full width
   }
   add_action('after_setup_theme', 'MDB_setup');
-
+                                     
 /**
  * Register our sidebars and widgetized areas.
  */
@@ -44,14 +47,14 @@ function mdb_widgets_init() {
   register_sidebar( array(
     'name'          => 'Sidebar',
     'id'            => 'sidebar',
-    'before_widget' => '',
-    'after_widget'  => '',
-    'before_title'  => '',
-    'after_title'   => '',
+    'before_widget' => '<div id="%1$s" class="widget-item">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h4 class="">',
+    'after_title'   => '</h4>',
   ) );
 
 }
 add_action( 'widgets_init', 'mdb_widgets_init' );
-            
+                                                                                     
+              
 ?>
-            
