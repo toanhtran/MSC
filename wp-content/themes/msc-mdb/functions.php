@@ -21,6 +21,7 @@ add_action( 'wp_enqueue_scripts', 'theme_enqueue_scripts' );
  * Include external files
  */
 require_once('inc/mdb_bootstrap_navwalker.php');
+require_once('inc/mdb_pagination.php');
              
 /**
  * Setup Theme

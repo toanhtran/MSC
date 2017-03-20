@@ -77,5 +77,11 @@
     <!--/.Footer-->
             
 <?php wp_footer(); ?>
+
+<script>
+$("#mdb-navigation > ul > li").addClass("page-item")
+$("#mdb-navigation > ul > li > a").addClass("page-link")
+</script>
+             
 </body>
 </html>

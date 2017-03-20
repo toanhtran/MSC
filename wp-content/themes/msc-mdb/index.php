@@ -68,6 +68,7 @@
             } // end while
             } // end if
             ?>
+            <?php mdb_pagination(); ?>
         </div>
 
         <!--Sidebar-->
