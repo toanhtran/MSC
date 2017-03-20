@@ -15,10 +15,10 @@
     <div class="carousel-inner" role="listbox">
         <!--First slide-->
         <div class="carousel-item active">
-            <img src="https://mdbootstrap.com/images/slides/slide%20(7).jpg" alt="First slide">
+            <img src="http://mdbootstrap.com/images/regular/city/img%20(41).jpg" alt="First slide">
         </div>
         <!--/First slide-->
-
+ 
         <!--Second slide-->
         <div class="carousel-item">
             <img src="https://mdbootstrap.com/images/slides/slide%20(8).jpg" alt="Second slide">
@@ -72,9 +72,10 @@
                 </div>
                 <br>
                 <!--Post excerpt-->
-                <p><?php the_excerpt(); ?></p>
+                <p><?php the_content(); ?></p>
                 <!--"Read more" button-->
-                <a href="<?php echo get_permalink() ?>"><button class="btn btn-primary">Read more</button></a>
+                <a href="<?php echo get_permalink() ?>">
+                <button class="btn btn-primary">Read more</button></a>
             </div>
             <!--/.Post-->
             <hr>
