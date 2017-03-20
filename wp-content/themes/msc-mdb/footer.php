@@ -14,21 +14,14 @@
 
                     <p>We our goal is to create a safe and fun community for learning computer skills.</p>
                 </div>
-                <!--/.First column-->
-
-                <hr class="hidden-md-up">
-                <!--Second column-->
-                <div class="col-md-2">
-                    <h5 class="title">First column</h5>
-                    <?php
-                    wp_nav_menu( array(
-                    'menu'              => 'footer1',
-                    'theme_location'    => 'footer1',
-                    'depth'             => 1
-                    )
-                    );
-                    ?>
+                <!--First column-->
+                <div class="col-md-3 col-md-offset-1">
+                  <?php if ( is_active_sidebar( 'footer' ) ) : ?>
+                  <?php dynamic_sidebar( 'footer' ); ?>
+                  <?php endif; ?>
                 </div>
+
+            
                 <!--/.Second column-->     
                   
 
