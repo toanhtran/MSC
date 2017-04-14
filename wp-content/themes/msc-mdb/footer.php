@@ -29,7 +29,7 @@
 
                 <!--Third column-->
                 <div class="col-md-2">
-                    <h5 class="title">Second column</h5>
+                    <h5 class="title">Resources We <i class="fa fa-heart" aria-hidden="true"></i></h5>
                     <ul>
                         <li><a href="#!">Link 1</a></li>
                         <li><a href="#!">Link 2</a></li>
@@ -43,12 +43,18 @@
 
                 <!--Fourth column-->
                 <div class="col-md-2">
-                    <h5 class="title">Third column</h5>
+                    <h5 class="title">Let's Get Social</h5>
                     <ul>
-                        <li><a href="#!">Link 1</a></li>
-                        <li><a href="#!">Link 2</a></li>
-                        <li><a href="#!">Link 3</a></li>
-                        <li><a href="#!">Link 4</a></li>
+                        <!--Facebook-->
+                        <a href="https://www.facebook.com/MILSpouseCoders" class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a> &nbsp;
+                        <!--Twitter-->
+                        <a href="https://twitter.com/MILSpouseCoders" class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a> &nbsp;
+                        <!--Google +-->
+                        <a href="https://plus.google.com/115988512421332416550" class="icons-sm gplus-ic"><i class="fa fa-google-plus"> </i></a> &nbsp;
+                                          
+                        <a href="https://milspousecoders.slack.com/" class="icons-sm slack-ic"><i class="fa fa-slack"> </i></a> &nbsp;
+                          <a class="icons-sm email-ic"><i class="fa fa-envelope-o"> </i></a> &nbsp;
+                   
                     </ul>
                 </div>
                 <!--/.Fourth column-->

@@ -15,8 +15,16 @@
 <body> 
 
 <header>
+    
     <!--Navbar-->
-    <nav class="navbar navbar-dark primary-color-dark">
+<nav class="navbar navbar-toggleable-md navbar-dark bg-primary">
+    <div class="container">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="/">
+            <strong>MILSPOUSECODERS</strong>
+        </a>
         <!-- Collapse button-->
         <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
             <i class="fa fa-bars"></i>
